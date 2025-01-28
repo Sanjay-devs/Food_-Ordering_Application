@@ -1,0 +1,117 @@
+.navbar {
+    /* padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; 
+    margin-bottom: 25px;
+    top: 1%;
+    width: 90%; 
+    z-index: 800; 
+    box-shadow: 0 15px 40px -20px rgba(40, 44, 63, .15);
+    border: none;
+    background: transparent;
+    border-radius: 20px; */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.navbar-menu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 18px;
+    align-items: center; 
+    padding-left: 20px;
+    padding-bottom: 10px;
+    /* margin: 0; */
+}
+
+.navbar .logo-cont{
+    width: 100px;
+    height: 10vh;
+    border-radius: 20px;
+}
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    cursor: pointer; 
+    padding-left: 100px;
+} 
+
+.nav-button{
+    background-color: white;
+    font-size: 16px;
+    color: black;
+    width: 100px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 80px;
+    transition: 0.3s;
+    /* margin-top: 100px; */
+} 
+
+.nav-container {
+    display: flex;
+    justify-content: flex-end; /* Aligns button to the right */
+    padding: 10px; /* Optional padding */
+    bottom: 50%;
+}
+
+.nav-button:hover{
+    background-color: orange;
+}
+
+.navbar-menu a:link{
+    text-decoration: none;
+}
+
+.navbar .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid tomato;
+}
+
+.navbar-serach-icon{
+    position: relative;
+    cursor: pointer;
+}
+
+.navbar-serach-icon .dot{
+    position: absolute;
+    max-width: 10px;
+    min-height: 10px;
+    color: tomato;
+    font-size: 17px;
+    padding-left: 5px;
+    font-weight: bolder;
+    /* background-color: tomato; */
+    border-radius: 5px;
+    top: -8px;
+    right: -8px;
+}
+
+.dashboard {
+    background-color: white;
+    font-size: 16px;
+    color: black;
+    width: 100px;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.3s;
+    margin-left: 91%;
+    margin-bottom: 10px;
+    font-weight: 550;
+    /* text-align: end; */
+    justify-content: center;
+}
+
+.dashboard:hover{
+    background-color: tomato;
+}

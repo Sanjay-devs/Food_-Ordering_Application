@@ -1,0 +1,114 @@
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ff6b6b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #e65b5b;
+}
+
+.search-results {
+    text-align: center;
+    padding: 10px;
+    padding-top: 80px;
+}
+
+.search-results h2{
+    color: black;
+}
+
+.search-results h3{
+    padding: 10px;
+    color: black;
+}
+
+
+
+.carousel-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fill);
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.carousel-item-rest {
+    display: grid;
+    grid-template-columns: repeat(auto-fill);
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    height: 400px;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+.carousel-item .restaurant-image {
+    width: 100%;
+}
+
+.carousel-details .restaurant-address{
+    color: blue;
+}
+
+.results-container{
+    padding-left: 0px;
+    padding-bottom: 15px;
+}
+
+.results-container {
+    padding-top: 20px;
+}
+
+.carousel-item .menu-name {
+   text-align: center;
+}
+
+.carousel-item .menu-image {
+   justify-content: center;
+   align-items: center;
+   padding-left: 60px;
+}
+
+.menu {
+    padding-top: 20px;
+}
+
+.menu h3 {
+    padding-bottom: 15px;
+}
+
+.search-results header{
+    padding-bottom: 10px;
+}
+
+.food-items {
+    padding: 10px;
+    color: blue;
+}
+
+
+.search-results .sre{
+    padding: 30px;
+}

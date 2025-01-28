@@ -1,0 +1,36 @@
+.payment {
+    display: grid;
+    height: 300px;
+    padding: 10px;
+    width: 500px;
+    margin: 0px auto;
+    padding-top: 100px;
+    border-radius: 10px;
+    color: black;
+}
+
+.paypal-buttons {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.payment h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+.payment h3{
+    text-align: center;
+    padding: 10px;
+    color: rgb(252, 6, 6);
+}
+
+.payment-options {
+    text-align: center;
+    align-items: center;
+}
+
+.checkout {
+    padding-bottom: 10px;
+}

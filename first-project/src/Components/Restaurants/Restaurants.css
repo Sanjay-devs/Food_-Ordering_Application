@@ -1,0 +1,142 @@
+.restaurants {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    /* padding-top: 100px; */
+}
+
+.restaurants h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.restaurants p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.restaurant-container {
+    width: 100%;
+    display: grid;
+    /* gap: 5px; */
+    flex-direction: column;
+    grid-template-columns: repeat(auto-fill);
+    /* gap: 10px; */
+
+}
+
+.restaurant-list {
+    width: 100%;
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    justify-items: center;
+    flex-grow: 1;
+    animation: fadeIn 1.3s;
+    
+}
+
+.restaurant-list :hover{
+    transform: scale(1.05);
+}
+
+.carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    /* background: #fff; */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    transition: transform 0.3s;
+}
+
+.restaurant-image {
+    width: 109%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    margin-top: 0;
+    padding-top: 0px;
+    
+}
+
+.carousel-details {
+    margin-top: 10px;
+}
+
+.carousel-details h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: black;
+    text-align: center;
+}
+
+.carousel-details p {
+    font-size: 1rem;
+    margin: 5px 0;
+    text-align: left;
+}
+
+.carousel-details .restaurant-address {
+    font-size: 12px;
+    font-style: normal;
+    color: #0378fd;
+    text-align: left;
+    padding-top: 5px;
+}
+
+.carousel-details .restaurant-desc {
+    text-align: left;
+    font-size: 14px;
+}
+
+.carousel-details .restaurant-name {
+    text-align: left;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.arrow-button {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+.arrow-button:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.arrow-button:hover:not(:disabled) {
+    color: #0056b3;
+}
+
+.left-arrow {
+    margin-right: 10px;
+}
+
+.right-arrow {
+    margin-left: 10px;
+}
+
+.error{
+    color: red;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }

@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+.food-display {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    /* font-family: Arial, sans-serif; */
+}
+
+.food-display h1{
+    padding-bottom: 10px;
+}
+
+.food-display-contents {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.food-display-contents h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.food-display-contents p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.food-display-list {
+    display: grid;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px;
+    padding-top: 10px;
+    justify-items: center;
+    cursor: pointer;
+    animation: fadeIn 0.3s;
+    /* align-items: start; */
+}
+
+.food-display-list-item {
+    /* background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    max-width: 240px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 5);
+    background-color: rgb(235, 212, 169);
+    text-align: center;
+    transition: transform 0.2s; */
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    max-width: 240px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 5);
+    background-color: rgb(235, 212, 169);
+    text-align: center;
+    transition: transform 0.2s;
+    padding: 10px;
+}
+
+.food-display-list-item:hover {
+    transform: scale(1.05);
+}
+
+.food-item-image {
+    width:100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 0px;
+}
+
+.restaurant-name {
+    /* display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-top: 5px; */
+    font-size: 15px;
+    text-align: left;
+    padding-left: 2px;
+
+    
+}
+
+/* .food-items {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    margin-top: 5px;
+    
+} */
+
+.food-item-name {
+    font-weight: bold;
+    color: #333;
+    font-size: 15px;
+    text-align: left;
+    padding-left: 2px;
+    flex-grow: 1;
+}
+
+.food-price {
+    font-size: 16px;
+    color: tomato;
+    text-align: right;
+    padding-top: 0px;
+    padding-left: 10px;
+    flex-shrink: 0;
+    display: inline-block;
+}
+
+.food-item-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.no-food-message{
+    color: rgba(255, 0, 0, 0.89);
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 35px;
+    padding-bottom: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: wheat;
+}
+
+.add {
+    background-color: white;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    color: green;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 80px;
+    padding: 8px;
+    margin: 0px auto;
+    border-color: white;
+}
+
+.cart-controls {
+    width: 100%;
+    color: black;
+    background-color: white;
+    background: transparent;
+    padding: 10px;
+    padding-left: 100px;
+}
+
+.cart-controls .increment{
+    width: 35px;
+    padding: 8px;
+    border-radius: 10px;
+    border-color: white;
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: white;
+}
+
+.cart-controls .decrement{
+    width: 35px;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    color: red;
+    border-color: white;
+    background-color: white;
+}
+
+.value {
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: green;
+    animation: fadeIn 2s;
+}
+
+.custom-toast .Toastify__toast--success {
+    background-color: #60b246;
+    color: white; 
+    font-weight: bold;
+    width: 100%;         
+}
+
+.custom-toast .Toastify__toast--error {
+    background-color: tomato;
+    color: white; 
+    font-weight: bold;
+    width: 100%;         
+}
