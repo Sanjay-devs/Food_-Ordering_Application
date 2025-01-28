@@ -39,20 +39,35 @@ const Orders = () => {
         }
     };
 
+    // const handlePaymentSuccess = async () => {
+    //     try {
+    //       const userId = +localStorage.getItem("userId");
+    //       const result = await processOrder(userId);
+    //       toast.success(result.Message);
+    //     } catch (error) {
+    //       toast.error("Error completing payment: " + error);
+    //     }
+    //   };
+      
     const handlePaymentSuccess = async () => {
         try {
-          const userId = +localStorage.getItem("userId");
-        //   const paymentRequest = { UserId: userId};
-      
-          const result = await processOrder(userId);
-          toast.success(result.Message);
-        //   navigate("/orders-list"); 
+            const userId = +localStorage.getItem("userId");
+    
+            // Call the processOrder API (or equivalent) to clear the cart
+            const result = await processOrder(userId);
+    
+            // Set the cart count to zero
+            setCartCount(0);
+    
+            toast.success(result.Message);
+    
+            // Redirect to the payment gateway
+            navigate("/payment_gateway", { state: { totalPrice } });
         } catch (error) {
-          toast.error("Error completing payment: " + error);
+            toast.error("Error completing payment: " + error);
         }
-      };
-      
-
+    };
+    
     const updateCart = async (foodItemID, change, menuId, restaurantId, foodItem, cartId, foodImage, price) => {
         console.log("jhbjh", orders);
         const currentItem = orders.find((item) => item.foodItemID === foodItemID);
@@ -93,6 +108,7 @@ const Orders = () => {
     return (
         <div className="cart-summary">
             <h2>Cart Items 🛒</h2>
+            <h3>Scroll down 📜 for payment 💲</h3>
             {orders && orders.length > 0 ? (
                 <div className="cart-items">
                     {orders.map((item) => (

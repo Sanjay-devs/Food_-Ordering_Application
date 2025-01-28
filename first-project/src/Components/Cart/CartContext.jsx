@@ -5,6 +5,7 @@ export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
     const [cartCount, setCartCount] = useState(0); // Shared cart count state
+    
 
     // Fetch total cart items on component mount or whenever the user logs in
     useEffect(() => {
